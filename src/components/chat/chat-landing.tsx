@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import type { Variants } from 'framer-motion';
 import { Award, Code, GraduationCap, Mail, MessageSquare, Briefcase } from 'lucide-react';
 import React from 'react';
 
@@ -51,7 +52,7 @@ const ChatLanding: React.FC<ChatLandingProps> = ({ submitQuery, handlePresetRepl
   };
 
   // Animation variants for staggered animation
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -61,14 +62,13 @@ const ChatLanding: React.FC<ChatLandingProps> = ({ submitQuery, handlePresetRepl
     },
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
         duration: 0.4,
-        ease: [0.25, 0.1, 0.25, 1],
       },
     },
   };

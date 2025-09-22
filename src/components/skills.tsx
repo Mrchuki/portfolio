@@ -3,6 +3,7 @@
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { motion } from 'framer-motion';
+import type { Variants } from 'framer-motion';
 import { Code, Users, Cloud, Microchip, Brain, Globe } from 'lucide-react';
 import { getConfig } from '@/lib/config-loader';
 
@@ -51,7 +52,7 @@ const Skills = () => {
   ].filter(category => category.skills && category.skills.length > 0);
 
   // Animation variants
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -61,21 +62,21 @@ const Skills = () => {
     },
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: 'easeOut' },
+      transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] as const },
     },
   };
 
-  const badgeVariants = {
+  const badgeVariants: Variants = {
     hidden: { opacity: 0, scale: 0.9 },
     visible: {
       opacity: 1,
       scale: 1,
-      transition: { duration: 0.3, ease: 'easeOut' },
+      transition: { duration: 0.3, ease: [0.25, 0.1, 0.25, 1] as const },
     },
   };
 
