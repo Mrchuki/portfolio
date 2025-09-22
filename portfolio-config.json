@@ -129,14 +129,14 @@
     "portfolio": "https://portfolio.anujjainbatu.tech/"
   },
 "internship": {
-  "seeking": false,
-  "duration": "6 months",
-  "startDate": "March 2025",
-  "preferredLocation": "Linz (Austria), Madrid (Spain), or Remote",
-  "focusAreas": ["AI & Data Engineering", "RAG Systems", "AI Agents", "Cloud Data Pipelines"],
-  "availability": "Currently completing internship at Bosch (Mar–Sep 2025)",
-  "workStyle": "Data-driven engineer with strong hands-on experience in AI, a fast learner, and effective collaborator in international teams.",
-  "goals": "Leverage AI to drive efficiency and innovation in industrial and enterprise contexts, while gaining expertise in scalable data solutions and global deployments."
+  "seeking": true,
+  "duration": "",
+  "startDate": "",
+  "preferredLocation": "To be discussed",
+  "focusAreas": ["Freelance projects in AI, automation, and digitalization"],
+  "availability": "Just finished my internship in September",
+  "workStyle": "Focused on driving AI adoption and digital transformation through data-driven engineering solutions. Committed to leveraging AI to improve efficiency, decision-making, and innovation in real-world applications. Combining technical expertise with an industrial engineering background to deliver solutions that create sustainable business impact.",
+  "goals": "Partner with teams to scope, prototype, and deploy AI- and automation-driven solutions that deliver measurable impact (efficiency, cost, quality). Open to freelance engagements across AI, automation, and digitalization: from rapid PoCs to production-ready systems, with a focus on reliability, MLOps, and continuous improvement."
   },
   "personality": {
     "traits": ["curious", "proactive", "team-oriented", "adaptable", "ambitious"],
