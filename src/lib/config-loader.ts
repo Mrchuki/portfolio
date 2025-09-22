@@ -40,7 +40,8 @@ try {
       databases: [],
       devops_cloud: [],
       iot_hardware: [],
-      soft_skills: []
+      soft_skills: [],
+      languages: []
     },
     projects: [],
     social: {

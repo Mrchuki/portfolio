@@ -15,7 +15,7 @@ export const getPresentation = tool({
       title: config.personal.title,
       age: config.personal.age,
       location: config.personal.location,
-      education: config.education.current,
+      education: config.education.current ?? null,
       traits: config.personality.traits,
       interests: config.personality.interests,
       motivation: config.personality.motivation,

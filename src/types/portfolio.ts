@@ -11,13 +11,20 @@ export interface PersonalInfo {
 }
 
 export interface Education {
-  current: {
+  current?: {
+    degree?: string;
+    institution?: string;
+    duration?: string;
+    cgpa?: string;
+    graduationDate?: string;
+  };
+  previous?: Array<{
     degree: string;
     institution: string;
-    duration: string;
-    cgpa: string;
-    graduationDate: string;
-  };
+    duration?: string;
+    completionDate?: string;
+    achievements?: string[];
+  }>;
   achievements: string[];
 }
 
@@ -38,6 +45,7 @@ export interface Skills {
   devops_cloud: string[];
   iot_hardware: string[];
   soft_skills: string[];
+  languages: string[];
 }
 
 export interface ProjectLink {

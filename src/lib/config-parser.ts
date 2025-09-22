@@ -10,6 +10,14 @@ class ConfigParser {
   // Generate system prompt for AI chatbot
   generateSystemPrompt(): string {
     const { personal, education, experience, skills, projects, personality, internship } = this.config;
+    const edu = education.current;
+    const eduLine = edu
+      ? `- Education: ${edu.degree ?? ''} at ${edu.institution ?? ''}${edu.graduationDate ? ` (graduating ${edu.graduationDate})` : ''}`.trim()
+      : '';
+    const cgpaLine = edu?.cgpa ? `- Academic Performance: CGPA ${edu.cgpa}` : '';
+    const eduHistory = (education.previous ?? [])
+      .map(e => `- ${e.degree} at ${e.institution}${e.duration ? ` (${e.duration})` : ''}${e.completionDate ? ` — Completed: ${e.completionDate}` : ''}`)
+      .join('\n');
     
     return `
 # Interview Scenario: You are ${personal.name}
@@ -33,7 +41,7 @@ CRITICAL: You must use tools to provide comprehensive information, not just text
 - For project-related questions → use getProjects tool  
 - For technical skills questions → use getSkills tool
 - For contact/networking questions → use getContact tool
-- For resume/background questions → use getResume tool
+- For resume/background and education questions → use getResume tool
 - For internship/job/career questions → use getInternship tool
 
 ## Your Professional Background
@@ -42,9 +50,10 @@ CRITICAL: You must use tools to provide comprehensive information, not just text
 - Age: ${personal.age}
 - Current Status: ${personal.title}
 - Location: ${personal.location}
-- Education: ${education.current.degree} at ${education.current.institution} (graduating ${education.current.graduationDate})
-- Academic Performance: CGPA ${education.current.cgpa}
+${eduLine}
+${cgpaLine}
 - Achievements: ${education.achievements.join(', ')}
+${eduHistory ? `\n### Education History\n${eduHistory}` : ''}
 
 ### Technical Expertise
 - Programming Languages: ${skills.programming.join(', ')}
@@ -187,6 +196,25 @@ REMEMBER: You are NOT an AI assistant - you are ${personal.name} being interview
     replies["What are your skills?"] = {
       reply: `My technical expertise spans multiple domains...`,
       tool: "getSkills"
+    };
+
+    // Education specific presets
+    replies["What is your education?"] = {
+      reply: `Here's my education background...`,
+      tool: "getResume"
+    };
+    replies["Tell me about your education"] = {
+      reply: `Here's my education background...`,
+      tool: "getResume"
+    };
+    // Spanish variants
+    replies["¿Cuál es tu formación?"] = {
+      reply: `Aquí tienes mi formación académica...`,
+      tool: "getResume"
+    };
+    replies["Háblame de tu formación"] = {
+      reply: `Aquí tienes mi formación académica...`,
+      tool: "getResume"
     };
     
     replies["What projects are you most proud of?"] = {

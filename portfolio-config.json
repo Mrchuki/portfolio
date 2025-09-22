@@ -1,363 +1,165 @@
 {
   "personal": {
-    "name": "Anuj Jain",
-    "age": 22,
-    "location": "Vidisha, Madhya Pradesh, India",
-    "title": "Full-stack Python Developer & AI Engineer",
-    "email": "anujjainbatu@gmail.com",
-    "phone": "+91 8305117236",
-    "handle": "@anujjainbatu",
-    "bio": "Hey 👋\nI'm Anuj, a passionate Full-stack Python developer and AI engineer with experience across ML, Generative AI, and IoT. Amazon ML Summer School trainee, SIH 2025 finalist, and active freelancer with 25+ delivered automation projects. I love building end-to-end smart systems — from IoT devices to LLM-powered applications.",
+    "name": "Iván Júdez Ráfales",
+    "age": 24,
+    "location": "Saragossa, Spain",
+    "title": "Industrial & AI Engineer",
+    "email": "ijudezrafales@gmail.com",
+    "phone": "+34 620928705",
+    "handle": "@ijudezrafales",
+    "bio": "Hey 👋😄\nI'm Iván, an Industrial Engineer who loves building smart things with AI. I’ve worked on projects in computer vision 👁️, RAG systems 📚✨ and automation ⚙️, both in research 🧑‍🔬 and industry 🏭 at Bosch. I’m curious 🧐, hands-on 🛠️, and always looking for new ways to make technology practical and useful 🚀. Outside of work, I enjoy spending time with friends 👥🎉 — if you appreciate that too, contact me for a water anytime 🍺😉",
     "avatar": "/profile.jpeg",
     "fallbackAvatar": "https://images.unsplash.com/photo-1610216705422-caa3fcb6d158?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3"
   },
   "education": {
-    "current": {
-      "degree": "B.Tech in Internet of Things",
-      "institution": "Samrat Ashok Technological Institute (SATI)",
-      "duration": "2022-2026",
-      "cgpa": "7.85/10.0",
-      "graduationDate": "June 2026"
-    },
-    "previous": {
-      "degree": "Higher Secondary Certificate (Science Stream)",
-      "institution": "Board of Secondary Education, MP",
-      "duration": "2021",
-      "percentage": "96.4%",
-      "completionDate": "March 2021"
-    },
+    "previous": [
+      {
+        "degree": "M.Sc. in Industrial Engineering + Smart Industry",
+        "institution": "Comillas Pontifical University (ICAI), Madrid, Spain",
+        "duration": "Sep 2023 – Jun 2025",
+        "completionDate": "June 2025",
+        "achievements": [
+          "Thesis awarded highest grade (10/10)",
+          "Developed a patent-pending computer vision system under NDA"
+        ]
+      },
+      {
+        "degree": "Exchange Program in Engineering",
+        "institution": "Hochschule Esslingen, Stuttgart, Germany",
+        "duration": "Sep 2022 – Jun 2023",
+        "completionDate": "June 2023"
+      },
+      {
+        "degree": "B.Sc. in Electronic and Automatic Engineering",
+        "institution": "University of Zaragoza, Spain",
+        "duration": "Sep 2019 – Jun 2023",
+        "completionDate": "June 2023",
+        "achievements": [
+          "Thesis grade: 9/10",
+          "Designed and simulated a fully functional automated sorting plant with Siemens TIA Portal and Factory I/O"
+        ]
+      }
+    ],
     "achievements": [
-      "Smart India Hackathon 2025 Finalist (2nd among 88,221 teams)",
-      "Amazon ML Summer School Trainee (Selected from 60,000+ applicants)",
-      "HDFC Badhte Kadam Scholarship recipient (2023 & 2024)",
-      "Satyarth Techfest 2023: 3rd position in Robo Race"
+      "3rd place in Hackathon organized by Repsol (2023)",
+      "1st place in Hackathon organized by Valor (2024)",
+      "3rd place in Spanish Basketball Championship (2016/2017)"
     ]
   },
   "experience": [
     {
-      "company": "Amazon ML Summer School",
-      "position": "Trainee",
-      "type": "Training Program",
-      "duration": "August 2025",
-      "description": "Selected from 60,000+ applicants for intensive machine learning program. Completed 8 modules covering Supervised/Unsupervised Learning, Deep Neural Networks, Sequential Models, Reinforcement Learning, Generative AI, and Causal Inference. Gained hands-on experience with Amazon-scale ML systems and recommendation engines.",
-      "technologies": ["Machine Learning", "Deep Neural Networks", "Reinforcement Learning", "Generative AI", "Sequential Models", "Causal Inference"]
-    },
-    {
-      "company": "MookMati",
-      "position": "Machine Learning Intern",
+      "company": "Bosch (BDO / LIX Team)",
+      "position": "AI & Data Engineering Intern",
       "type": "Internship",
-      "duration": "July 2024",
-      "description": "AI-Powered Book Startup - Developed ML model for book genre classification using TF-IDF and XGBoost, achieving 88% F1-score. Engineered FastAPI backend with REST endpoints for genre prediction and recommendations. Containerized and deployed service on AWS EC2 with monitoring and auto-restart capabilities.",
-      "technologies": ["Python", "Machine Learning", "TF-IDF", "XGBoost", "FastAPI", "AWS EC2", "Docker"]
+      "duration": "March 2025 – September 2025",
+      "description": "Worked on AI-powered assistants and data engineering workflows within Bosch’s Library Intelligence Xperience (LIX) team. Developed a private RAG system using Azure OpenAI, LangChain, and Chroma for technical documentation. Built structured pipelines for evaluation and document retrieval, integrating Pydantic parsing, Hydra configs, and Deepeval testing. Collaborated with international teams to deliver scalable AI solutions.",
+      "technologies": ["Python", "LangChain", "Azure OpenAI", "ChromaDB", "Hydra", "Pydantic", "Deepeval", "FastAPI"]
     },
     {
-      "company": "Fiverr",
-      "position": "Freelance Python & AI Developer",
-      "type": "Freelance",
-      "duration": "August 2023 - Present",
-      "description": "Delivered 25+ Python automation solutions reducing manual work by 60% for global clients. Built GenAI-powered chatbots and autonomous agents using LangChain, LangGraph, OpenAI APIs. Developed LLM-backed APIs using FastAPI and Docker for conversational AI integration.",
-      "technologies": ["Python", "LangChain", "LangGraph", "OpenAI API", "FastAPI", "Docker", "Web Scraping", "Automation"]
+      "company": "Research Internship",
+      "position": "AI Research Intern",
+      "type": "Internship",
+      "duration": "June 2024 – September 2024",
+      "description": "Conducted research on LLM workflows for scientific papers. Built an end-to-end pipeline to process raw PDFs from arXiv, generate text fragments with Mixtral8x7B and Qwen, and fine-tune LLaMA3 and Gemma models for conversational assistants. Designed evaluation frameworks and contributed to experiments on context retrieval and summarization.",
+      "technologies": ["Python", "Mixtral8x7B", "Qwen", "LLaMA3", "Gemma", "LangChain", "Fine-tuning", "Evaluation Pipelines"]
     }
   ],
   "skills": {
-    "programming": ["Python", "JavaScript", "SQL", "HTML/CSS", "TypeScript"],
-    "ml_ai": ["Scikit-learn", "XGBoost", "TensorFlow", "OpenCV", "Pandas", "NumPy", "LangChain", "LangGraph", "OpenAI API", "LLM Agents", "ChatGPT Integration", "Hugging Face"],
+    "programming": ["Python", "JavaScript", "SQL", "HTML/CSS", "C/C++"],
+    "ml_ai": ["Scikit-learn", "TensorFlow", "OpenCV", "Pandas", "NumPy", "LangChain", "LangGraph", "OpenAI API", "LLM Agents", "ChatGPT Integration", "Hugging Face"],
     "web_development": ["React.js", "Next.js", "FastAPI", "Flask", "Django", "Firebase SDK", "REST APIs", "Tailwind CSS", "Node.js"],
     "databases": ["PostgreSQL", "MongoDB", "Firebase", "MySQL"],
-    "devops_cloud": ["Docker", "Git", "GitHub Actions", "CI/CD", "AWS (EC2/S3)", "Firebase", "Heroku"],
-    "iot_hardware": ["ESP32", "Arduino", "PCB Design", "Hardware Development", "IoT Systems", "Raspberry Pi"],
-    "soft_skills": ["Problem Solving", "Team Leadership", "Project Management", "Communication", "Learning Agility", "Innovation"]
+    "devops_cloud": ["Docker", "Git", "GitHub Actions", "CI/CD", "n8n"],
+    "iot_hardware": ["Arduino", "Hardware Development", "IoT Systems", "Raspberry Pi"],
+    "soft_skills": ["Problem Solving", "Team Leadership", "Project Management", "Communication", "Learning Agility", "Innovation"],
+    "languages": ["Spanish — Native", "English — Professional", "German — Basic"]
   },
   "certifications": [
-    {
-      "name": "Joy of Computing with Python",
-      "issuer": "IIT Madras (NPTEL)",
-      "grade": "Elite + Silver",
-      "year": "2024"
-    },
-    {
-      "name": "Machine Learning Specialization",
-      "issuer": "Stanford University (Coursera)",
-      "year": "2024"
-    },
-    {
-      "name": "Meta Front-End Developer Professional Certificate",
-      "issuer": "Meta (Coursera)",
-      "year": "2024"
-    },
-    {
-      "name": "Java Programming & Software Engineering",
-      "issuer": "Duke University (Coursera)",
-      "year": "2023"
-    }
   ],
   "projects": [
     {
-      "title": "AI-Powered Developer Portfolio",
-      "category": "AI/Web Development",
-      "description": "Built customizable portfolio platform using Next.js, TypeScript, and Google Gemini API. Implemented AI-driven content generation and resume parsing for automated portfolio creation. Features include dynamic chatbot, responsive design, and Vercel deployment.",
-      "techStack": ["Next.js", "TypeScript", "Google Gemini API", "React", "Tailwind CSS", "Vercel"],
-      "date": "April 2025",
+      "title": "Automated Sorting Plant Digital Twin",
+      "category": "Industrial Automation",
+      "description": "Designed and implemented a digital twin of an automated factory for parcel classification, storage, and distribution using Siemens TIA Portal V17 and Factory I/O. Developed the entire control logic in Graph language and integrated an HMI screen for intuitive operator interaction. The virtual plant was composed of multiple zones with conveyors, sensors, actuators, and robots, replicating a real logistics workflow. The system improved process efficiency, reduced operational risks, and enabled rapid testing of automation strategies before real-world deployment.",
+      "techStack": ["Siemens TIA Portal V17", "Factory I/O", "Graph Programming", "PLC S7-1511-1 PN", "HMI TP700 Comfort", "Industrial Automation"],
+      "date": "June 2023",
       "status": "Completed",
       "featured": true,
-      "links": [
-        {
-          "name": "Live Site",
-          "url": "https://portfolio.anujjainbatu.tech/"
-        },
-        {
-          "name": "GitHub",
-          "url": "https://github.com/anujjainbatu/portfolio"
-        }
-      ],
       "images": [
         {
-          "src": "https://raw.githubusercontent.com/anujjainbatu/portfolio/main/assets/portfolio.png",
-          "alt": "Portfolio Homepage"
+          "src": "https://raw.githubusercontent.com/Mrchuki/DistributedSystems23/main/tfg.gif",
+          "alt": "Automated Sorting Plant Simulation"
         }
       ]
     },
     {
-      "title": "Insurance Premium Prediction API",
-      "category": "Backend API/Machine Learning",
-      "description": "Built production-ready ML inference API with FastAPI and Pydantic validation. Dockerized application with comprehensive monitoring endpoints and Swagger documentation. Designed scalable architecture following industry best practices for input validation and error handling.",
-      "techStack": ["Python", "FastAPI", "Pydantic", "Docker", "Machine Learning", "Swagger", "Uvicorn"],
-      "date": "September 2025",
-      "status": "Completed",
-      "featured": true,
-      "links": [
-        {
-          "name": "GitHub",
-          "url": "https://github.com/anujjainbatu/insurance-premium-prediction-fastapi"
-        },
-        {
-          "name": "Docker Hub",
-          "url": "https://hub.docker.com/r/anujjainbatu/insurance-premium-api"
-        },
-        {
-          "name": "Live API Docs",
-          "url": "http://51.20.55.205:8000/docs"
-        }
-      ],
-      "images": [
-        {
-          "src": "https://raw.githubusercontent.com/anujjainbatu/insurance-premium-prediction-fastapi/main/assets/demo.gif",
-          "alt": "Insurance Premium Prediction API Demo"
-        }
-      ]
-    },
-    {
-      "title": "LeetConnect",
-      "category": "Chrome Extension",
-      "description": "JavaScript-based Chrome Extension that connects you with friends and tracks LeetCode statistics in real-time. Stay motivated by seeing your friends' progress, get notified when they solve new problems, and manage your study group or team's coding journey together.",
-      "techStack": ["JavaScript", "Chrome Extension Manifest V3", "HTML", "CSS", "Chrome Storage API", "Chrome Notifications API", "LeetCode API"],
-      "date": "2024",
-      "status": "Ongoing",
-      "featured": true,
-      "links": [
-        {
-          "name": "GitHub",
-          "url": "https://github.com/anujjainbatu/leetconnect"
-        },
-        {
-          "name": "Demo GIF",
-          "url": "https://raw.githubusercontent.com/anujjainbatu/leetconnect/main/assets-landing/screenshots/demo-web.gif"
-        }
-      ],
-      "images": [
-        {
-          "src": "https://raw.githubusercontent.com/anujjainbatu/leetconnect/main/assets-landing/screenshots/demo-web.gif",
-          "alt": "LeetConnect Extension Demo"
-        }
-      ]
-    },
-    {
-      "title": "IntelliPrice",
-      "category": "Machine Learning",
-      "description": "ML-powered laptop price prediction system built with Streamlit. Features clean interface, fast predictions, and easy deployment via Docker. Uses key attributes like brand, CPU, RAM, storage, GPU, and screen size for accurate real-time price estimates.",
-      "techStack": ["Python", "Streamlit", "scikit-learn", "Docker", "Pandas", "Machine Learning"],
-      "date": "2025",
-      "status": "Completed",
-      "featured": true,
-      "links": [
-        {
-          "name": "GitHub",
-          "url": "https://github.com/anujjainbatu/IntelliPrice"
-        },
-        {
-          "name": "Demo GIF",
-          "url": "https://github.com/anujjainbatu/IntelliPrice/blob/main/assets/demo.gif"
-        }
-      ],
-      "images": [
-        {
-          "src": "https://github.com/anujjainbatu/IntelliPrice/blob/main/assets/demo.gif?raw=true",
-          "alt": "IntelliPrice App Demo"
-        }
-      ]
-    },
-    {
-      "title": "SpamSense",
-      "category": "NLP System",
-      "description": "NLP-based spam detection tool that predicts whether marketing emails will land in inbox or spam folder. Features Streamlit web interface and scikit-learn ML model trained on real spam datasets for agencies to optimize campaign deliverability.",
-      "techStack": ["Python", "Streamlit", "scikit-learn", "NLP", "Machine Learning", "Heroku"],
-      "date": "2025",
-      "status": "Completed",
-      "featured": true,
-      "links": [
-        {
-          "name": "GitHub",
-          "url": "https://github.com/anujjainbatu/spamsense"
-        },
-        {
-          "name": "Demo GIF",
-          "url": "https://github.com/anujjainbatu/spamsense/blob/main/assets/demo.gif"
-        }
-      ],
-      "images": [
-        {
-          "src": "https://raw.githubusercontent.com/anujjainbatu/spamsense/main/assets/demo.gif",
-          "alt": "SpamSense Demo"
-        }
-      ]
-    },
-    {
-      "title": "PopcornPicks",
-      "category": "Machine Learning",
-      "description": "Movie recommendation system built with Streamlit. Select a movie you like and get personalized recommendations with detailed information and posters. Uses machine learning to suggest similar movies based on selection using movie metadata and similarity matrix.",
-      "techStack": ["Python", "Streamlit", "Pickle", "scikit-learn", "pandas", "Heroku"],
+      "title": "ABB Dual Manipulator Digital Twin",
+      "category": "Automation with ABB",
+      "description": "Developed a basic digital twin to simulate the coordinated and individual behavior of two ABB manipulators working in parallel. The system replicated the real production line scenario, enabling quick prototyping, faster testing, and better understanding of the synchronized robot operations.",
+      "techStack": ["ABB RobotStudio", "Digital Twin", "Automation", "Simulation"],
       "date": "2024",
       "status": "Completed",
       "featured": true,
-      "links": [
-        {
-          "name": "GitHub",
-          "url": "https://github.com/anujjainbatu/popcornpicks"
-        }
-      ],
-      "images": []
-    },
-    {
-      "title": "Chess Trace",
-      "category": "IoT System",
-      "description": "Built an IoT-enabled chessboard using ESP32, multiplexers, and 64 reed switches with 98.2% move detection accuracy at 1/8th the commercial cost. Features real-time move logging to Firebase, a web dashboard for live analysis and replay, and Stockfish-powered engine integration. Led a 3-member team through hardware prototyping, firmware development, cloud setup, and user testing with 20+ players.",
-      "techStack": ["ESP32", "C++ (Arduino)", "HTML", "CSS", "JavaScript", "Firebase", "Stockfish.js", "PCB Design", "IoT", "Cloud Integration", "Hardware Development"],
-      "date": "2025",
-      "status": "Completed",
-      "featured": true,
-      "links": [
-        {
-          "name": "GitHub",
-          "url": "https://github.com/anujjainbatu/chess-trace"
-        }
-      ],
       "images": [
         {
-          "src": "https://raw.githubusercontent.com/anujjainbatu/chess-trace/main/assets/solution_architecture_dia.jpeg",
-          "alt": "Solution Architecture Diagram"
-        },
-        {
-          "src": "https://raw.githubusercontent.com/anujjainbatu/chess-trace/main/assets/product.png",
-          "alt": "Product"
+          "src": "https://raw.githubusercontent.com/Mrchuki/DistributedSystems23/main/videoAA.gif",
+          "alt": "ABB Digital Twin Simulation Demo"
         }
       ]
     },
     {
-      "title": "Pralay Mitra",
-      "category": "AI/Disaster Management",
-      "description": "AI-powered disaster management system to assist government officials during emergencies. Features interactive dashboard, real-time high-risk city alerts, AI chatbot (Gemini API) for response planning, and centralized resources for food, shelter, and medical aid.",
-      "techStack": ["Python", "Django", "JavaScript", "Bootstrap", "FontAwesome", "Gemini API"],
+      "title": "Smart Irrigation Digital Twin",
+      "category": "Embedded Systems / IoT",
+      "description": "Designed and implemented an autonomous smart irrigation system using a dsPIC33FJ32MC202 microcontroller. The project simulated a digital twin of a domestic cultivation zone, controlling soil humidity, temperature, and solar irradiation through actuators. Features included a soil moisture sensor activating a servo-driven valve, a fan regulated by a thermistor, and a motorized awning controlled by a photoresistor. The system operated in multiple states, adapting irrigation, ventilation, and shading dynamically to environmental conditions, allowing rapid testing and validation of control strategies.",
+      "techStack": ["dsPIC33FJ32MC202", "Embedded C", "Sensors (humidity, thermistor, photoresistor, FSR)", "Servomotors", "Ventilation system", "Digital Twin Simulation"],
       "date": "2024",
       "status": "Completed",
       "featured": true,
-      "links": [
+      "images": [
         {
-          "name": "GitHub",
-          "url": "https://github.com/anujjainbatu/Pralay_Mitra"
+          "src": "https://raw.githubusercontent.com/Mrchuki/DistributedSystems23/main/output.gif",
+          "alt": "Smart Irrigation Digital Twin Demo"
         }
-      ],
-      "images": []
-    },
-    {
-      "title": "hideFlare: CDN Obfuscation Detection System",
-      "category": "Cybersecurity Tool",
-      "description": "Python tool to uncover real hosting details of websites protected by Cloudflare. Automates subdomain enumeration, SSL analysis, ASN/org/GeoIP lookups, historical IP resolution, and outputs results for security researchers. Used for SIH 2024 finalist project for MP Police.",
-      "techStack": ["Python", "Subdomain Enumeration", "SSL Analysis", "SecurityTrails API"],
-      "date": "2024",
-      "status": "Completed",
-      "featured": true,
-      "achievements": ["Smart India Hackathon 2024 Finalist"],
-      "links": [
-        {
-          "name": "GitHub",
-          "url": "https://github.com/anujjainbatu/hideFlare"
-        }
-      ],
-      "images": []
-    },
-    {
-      "title": "Python Automation Suite",
-      "category": "Automation",
-      "description": "Delivered 25+ Python automation projects for global clients, including web scraping, API bots, and data pipelines. Built GenAI-powered chatbots and autonomous agents using LangChain, LangGraph, and OpenAI APIs, reducing manual work by 60%.",
-      "techStack": ["Python", "LangChain", "LangGraph", "OpenAI API", "Web Scraping", "Automation", "FastAPI", "Docker"],
-      "date": "2023-Present",
-      "status": "Ongoing",
-      "featured": true,
-      "metrics": ["25+ Projects Delivered", "60% Manual Work Reduction"],
-      "links": [
-        {
-          "name": "Fiverr Profile",
-          "url": "https://www.fiverr.com"
-        },
-        {
-          "name": "GitHub",
-          "url": "https://github.com/anujjainbatu"
-        }
-      ],
-      "images": []
+      ]
     }
   ],
   "social": {
-    "linkedin": "https://linkedin.com/in/anujjainbatu",
-    "github": "https://github.com/anujjainbatu",
-    "twitter": "https://x.com/anujainbatu",
-    "kaggle": "https://www.kaggle.com/anujjainbatu",
-    "leetcode": "https://leetcode.com/u/anujjainbatu/",
-    "fiverr": "https://www.fiverr.com",
+    "linkedin": "https://www.linkedin.com/in/ivanjudez/",
+    "github": "https://github.com/Mrchuki",
     "portfolio": "https://portfolio.anujjainbatu.tech/"
   },
-  "internship": {
-    "seeking": true,
-    "duration": "6 months",
-    "startDate": "February 2025",
-    "preferredLocation": "Remote or On-site",
-    "focusAreas": ["AI Development", "Full-stack Development", "Machine Learning", "Generative AI"],
-    "availability": "Available for immediate start",
-    "workStyle": "Fast learner, team player, problem solver with hands-on experience in production systems",
-    "goals": "Join an innovative team building AI-powered solutions. I want to contribute to meaningful projects while growing my skills in enterprise-level development and scaling ML systems."
+"internship": {
+  "seeking": false,
+  "duration": "6 months",
+  "startDate": "March 2025",
+  "preferredLocation": "Linz (Austria), Madrid (Spain), or Remote",
+  "focusAreas": ["AI & Data Engineering", "RAG Systems", "AI Agents", "Cloud Data Pipelines"],
+  "availability": "Currently completing internship at Bosch (Mar–Sep 2025)",
+  "workStyle": "Data-driven engineer with strong hands-on experience in AI, a fast learner, and effective collaborator in international teams.",
+  "goals": "Leverage AI to drive efficiency and innovation in industrial and enterprise contexts, while gaining expertise in scalable data solutions and global deployments."
   },
   "personality": {
-    "traits": ["passionate", "curious", "determined", "collaborative", "results-driven"],
-    "interests": ["AI/ML", "Generative AI", "IoT", "Web Development", "Open Source", "Hackathons", "Automation"],
+    "traits": ["curious", "proactive", "team-oriented", "adaptable", "ambitious"],
+    "interests": ["AI/ML", "Computer Vision", "RAG Systems", "Automation", "Industrial Engineering", "Cloud & Data", "Sports & Travel"],
     "funFacts": [
-      "Smart India Hackathon 2025 finalist among 88,221 teams",
-      "Amazon ML Summer School trainee (top 5% selection rate)",
-      "Built 25+ automation projects reducing manual work by 60%",
-      "Achieved 88% F1-score in ML model for book genre classification"
+      "Completed two Master’s degrees in Industrial Engineering and Connected Industry",
+      "Worked on AI research projects with Bosch and research institutes",
+      "Experience ranges from industrial automation with PLCs to LLM-powered assistants",
+      "Big basketball fan 🏀 and always up for a game or a trip"
     ],
-    "workingStyle": "I move fast, learn faster, and love tackling challenging problems with scalable solutions",
-    "motivation": "Building technology that makes a real impact on people's lives through AI and automation"
+    "workingStyle": "Hands-on engineer who learns quickly, adapts to challenges, and enjoys building practical solutions with real impact",
+    "motivation": "Keep learning, exploring, and creating — while enjoying the journey with great people along the way"
   },
   "resume": {
-    "title": "Anuj Jain - Resume",
-    "description": "Full-stack Python Developer & AI Engineer | Amazon ML Summer School Trainee | SIH 2025 Finalist",
+    "title": "Iván Júdez Ráfales - Resume",
+    "description": "Industrial & AI Engineer",
     "fileType": "PDF",
     "lastUpdated": "September 2025",
-    "fileSize": "2.1 MB",
-    "downloadUrl": "https://anujjainbatu.github.io/anujjainbatu/resume_show_16092025.pdf"
+    "fileSize": "64 MB",
+    "downloadUrl": "/CV_IvanJudezRafales.pdf"
   },
   "chatbot": {
-    "name": "Anuj",
+    "name": "MrChuki",
     "personality": "casual, enthusiastic, tech-savvy",
     "tone": "friendly and conversational",
     "language": "english",
@@ -416,9 +218,9 @@
     ]
   },
   "meta": {
-    "configVersion": "2.0",
-    "lastUpdated": "2025-09-15",
-    "generatedBy": "Anuj Jain",
-    "description": "Updated portfolio configuration with latest resume information including Amazon ML Summer School, updated projects, and enhanced certifications"
+    "configVersion": "10.0",
+    "lastUpdated": "2025-09-22",
+    "generatedBy": "Iván Júdez Ráfales",
+    "description": "Updated portfolio configuration with Iván Júdez Ráfales' information"
   }
 }

@@ -25,7 +25,7 @@ export const getResume = tool({
       },
       summary: config.personal.bio,
       education: {
-        current: config.education.current,
+        current: config.education.current ?? null,
         achievements: config.education.achievements
       },
       experience: config.experience.map(exp => ({

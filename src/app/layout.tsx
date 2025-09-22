@@ -14,12 +14,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Anuj Jain - Full-stack Python Developer & AI Engineer | Professional Portfolio",
-    template: "%s | Anuj Jain Portfolio"
+    default: "Iván Júdez Ráfales - Industrial & AI Engineer | Professional Portfolio",
+    template: "%s | Iván Júdez Ráfales Portfolio"
   },
-  description: "Professional portfolio of Anuj Jain - Full-stack Python Developer & AI Engineer. SIH 2025 Finalist showcasing 25+ automation projects, IoT systems, and AI-powered solutions. Available for internships.",
+  description: "Professional portfolio of Iván Júdez Ráfales - Industrial & AI Engineer. Showcasing AI, Automation, and IoT projects.",
   keywords: [
-    "Anuj Jain",
     "Full-stack Developer", 
     "Python Developer",
     "AI Engineer",
@@ -47,12 +46,12 @@ export const metadata: Metadata = {
   ],
   authors: [
     {
-      name: "Anuj Jain",
-      url: "https://portfolio.anujjainbatu.tech/",
+      name: "Iván Júdez Ráfales",
+      url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
     },
   ],
-  creator: "Anuj Jain",
-  publisher: "Anuj Jain",
+  creator: "Iván Júdez Ráfales",
+  publisher: "Iván Júdez Ráfales",
   robots: {
     index: true,
     follow: true,
@@ -67,29 +66,29 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://portfolio.anujjainbatu.tech/",
-    title: "Anuj Jain - Full-stack Python Developer & AI Engineer | Professional Portfolio",
-    description: "Professional portfolio showcasing AI-powered projects, IoT systems, and full-stack development. SIH 2025 Finalist with 25+ automation projects. Available for internships.",
-    siteName: "Anuj Jain Portfolio",
+    url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
+    title: "Iván Júdez Ráfales - Industrial & AI Engineer | Professional Portfolio",
+    description: "Professional portfolio of Iván Júdez Ráfales showcasing AI-powered projects, IoT systems, and full-stack development.",
+    siteName: "Iván Júdez Ráfales Portfolio",
     images: [
       {
-        url: "https://portfolio.anujjainbatu.tech/portfolio.png",
+        url: `${process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"}/portfolio.png`,
         width: 1200,
         height: 630,
-        alt: "Anuj Jain - Professional Portfolio with AI Chatbot",
+        alt: "Iván Júdez Ráfales - Professional Portfolio with AI Chatbot",
         type: "image/png",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Anuj Jain - Full-stack Python Developer & AI Engineer",
-    description: "Professional portfolio showcasing AI projects, IoT systems, and automation solutions. SIH 2025 Finalist available for internships.",
-    creator: "@anujainbatu",
-    site: "@anujainbatu",
+    title: "Iván Júdez Ráfales - Industrial & AI Engineer",
+    description: "Professional portfolio showcasing AI projects, IoT systems, and automation solutions.",
+    creator: "@ijudezrafales",
+    site: "@ijudezrafales",
     images: [{
-      url: "https://portfolio.anujjainbatu.tech/portfolio.png",
-      alt: "Anuj Jain Professional Portfolio"
+      url: `${process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"}/portfolio.png`,
+      alt: "Iván Júdez Ráfales Professional Portfolio"
     }],
   },
   icons: {
@@ -104,7 +103,7 @@ export const metadata: Metadata = {
   },
   manifest: "/manifest.json",
   alternates: {
-    canonical: "https://portfolio.anujjainbatu.tech/",
+    canonical: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
   },
   category: "technology",
   classification: "Portfolio Website",
@@ -123,21 +122,20 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="canonical" href="https://portfolio.anujjainbatu.tech/" />
+        <link rel="canonical" href={process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              "name": "Anuj Jain",
-              "jobTitle": "Full-stack Python Developer & AI Engineer",
-              "url": "https://portfolio.anujjainbatu.tech/",
-              "image": "https://portfolio.anujjainbatu.tech/profile.jpeg",
+              "name": "Iván Júdez Ráfales",
+              "jobTitle": "Industrial & AI Engineer",
+              "url": process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
+              "image": `${process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"}/profile.jpeg`,
               "sameAs": [
-                "https://github.com/anujjainbatu",
-                "https://linkedin.com/in/anujjainbatu",
-                "https://x.com/anujainbatu"
+                "https://github.com/Mrchuki",
+                "https://www.linkedin.com/in/ivanjudez/"
               ],
               "worksFor": {
                 "@type": "Organization",
@@ -145,7 +143,7 @@ export default function RootLayout({
               },
               "alumniOf": {
                 "@type": "Organization",
-                "name": "SATI"
+                "name": "Comillas ICAI"
               },
               "knowsAbout": [
                 "Python Development",
@@ -156,7 +154,7 @@ export default function RootLayout({
                 "Automation",
                 "Full Stack Development"
               ],
-              "description": "Full-stack Python Developer & AI Engineer with expertise in building AI-powered solutions, IoT systems, and automation tools. SIH 2025 Finalist with 25+ delivered projects."
+              "description": "Industrial & AI Engineer with hands-on experience in AI, Automation, and IoT."
             })
           }}
         />

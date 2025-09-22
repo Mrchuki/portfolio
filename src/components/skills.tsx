@@ -3,7 +3,7 @@
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { motion } from 'framer-motion';
-import { Code, Cpu, PenTool, Users, Database, Cloud, Microchip, Brain } from 'lucide-react';
+import { Code, Users, Cloud, Microchip, Brain, Globe } from 'lucide-react';
 import { getConfig } from '@/lib/config-loader';
 
 const Skills = () => {
@@ -25,18 +25,6 @@ const Skills = () => {
       color: 'bg-purple-50 text-purple-600 border border-purple-200',
     },
     {
-      category: 'Web Development',
-      icon: <Cpu className="h-5 w-5" />,
-      skills: config.skills.web_development,
-      color: 'bg-green-50 text-green-600 border border-green-200',
-    },
-    {
-      category: 'Databases',
-      icon: <Database className="h-5 w-5" />,
-      skills: config.skills.databases,
-      color: 'bg-orange-50 text-orange-600 border border-orange-200',
-    },
-    {
       category: 'DevOps & Cloud',
       icon: <Cloud className="h-5 w-5" />,
       skills: config.skills.devops_cloud,
@@ -53,6 +41,12 @@ const Skills = () => {
       icon: <Users className="h-5 w-5" />,
       skills: config.skills.soft_skills,
       color: 'bg-amber-50 text-amber-600 border border-amber-200',
+    },
+    {
+      category: 'Languages',
+      icon: <Globe className="h-5 w-5" />,
+      skills: config.skills.languages,
+      color: 'bg-teal-50 text-teal-600 border border-teal-200',
     },
   ].filter(category => category.skills && category.skills.length > 0);
 
@@ -125,7 +119,7 @@ const Skills = () => {
                   initial="hidden"
                   animate="visible"
                 >
-                  {section.skills.map((skill, idx) => (
+                  {(section.skills ?? []).map((skill: string, idx: number) => (
                     <motion.div
                       key={idx}
                       variants={badgeVariants}

@@ -16,13 +16,16 @@ export const getSkills = tool({
         webDevelopment: config.skills.web_development,
         databases: config.skills.databases,
         devOpsCloud: config.skills.devops_cloud,
-        iotHardware: config.skills.iot_hardware
+        iotHardware: config.skills.iot_hardware,
+        languages: config.skills.languages,
       },
       education: {
-        degree: config.education.current.degree,
-        institution: config.education.current.institution,
-        cgpa: config.education.current.cgpa,
-        duration: config.education.current.duration
+        degree: config.education.current?.degree ?? null,
+        institution: config.education.current?.institution ?? null,
+        cgpa: config.education.current?.cgpa ?? null,
+        duration: config.education.current?.duration ?? null,
+        previous: config.education.previous ?? [],
+        achievements: config.education.achievements ?? [],
       },
       achievements: config.education.achievements || [],
       experience: config.experience.map(exp => ({
