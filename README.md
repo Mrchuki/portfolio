@@ -55,7 +55,7 @@ No coding knowledge required. Just configure, deploy, and showcase your best sel
     - Copy `.env.example` to `.env.local`
     - Add your API key:
       ```
-      GOOGLE_GENERATIVE_AI_API_KEY=your_google_ai_api_key_here
+      DEEPSEEK_API_KEY=your_deepseek_api_key_here
       ```
 
 5. **Edit Your Info**
@@ -152,7 +152,7 @@ Example config:
 ## ⚙️ Environment & Validation
 
 - **Environment Variables**:  
-  - `GOOGLE_GENERATIVE_AI_API_KEY=your_key`
+  - `DEEPSEEK_API_KEY=your_key`
   - `NEXT_PUBLIC_SITE_URL=https://your-site.com` (optional)
   - Do not commit `.env.local` to your repository.
 - **Validation**:

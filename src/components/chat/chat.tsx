@@ -100,7 +100,7 @@ const Chat = () => {
     addToolResult,
     append,
   } = useChat({
-    onResponse: (response) => {
+    onResponse: (response: any) => {
       if (response) {
         setLoadingSubmit(false);
       }
@@ -108,7 +108,7 @@ const Chat = () => {
     onFinish: () => {
       setLoadingSubmit(false);
     },
-    onError: (error) => {
+    onError: (error: any) => {
       setLoadingSubmit(false);
       console.error('Chat error:', error.message, error.cause);
       
@@ -146,11 +146,11 @@ const Chat = () => {
         setErrorMessage(`Error: ${error.message}`);
       }
     },
-    onToolCall: (tool) => {
+    onToolCall: (tool: any) => {
       const toolName = tool.toolCall.toolName;
       console.log('Tool call:', toolName);
     },
-  });
+  } as any);
 
   const { currentAIMessage, latestUserMessage, hasActiveTool } = useMemo(() => {
     const latestAIMessageIndex = messages.findLastIndex(
@@ -303,7 +303,7 @@ const Chat = () => {
                 <ChatBubble variant="sent">
                   <ChatBubbleMessage>
                     <ChatMessageContent
-                      message={latestUserMessage}
+                      message={latestUserMessage as any}
                       isLast={true}
                       isLoading={false}
                       reload={() => Promise.resolve(null)}
@@ -422,7 +422,7 @@ const Chat = () => {
             ) : currentAIMessage ? (
               <div className="pb-4">
                 <SimplifiedChatView
-                  message={currentAIMessage}
+                  message={currentAIMessage as any}
                   isLoading={isLoading}
                   reload={reload}
                   addToolResult={addToolResult}

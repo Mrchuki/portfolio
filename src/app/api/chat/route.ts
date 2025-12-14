@@ -1,5 +1,5 @@
-import { createGoogleGenerativeAI } from '@ai-sdk/google';
-import { streamText, tool } from 'ai';
+import { createOpenAI } from '@ai-sdk/openai';
+import { streamText, tool, type CoreMessage } from 'ai';
 import { z } from 'zod';
 
 import { SYSTEM_PROMPT } from './prompt';
@@ -12,12 +12,12 @@ import { getSkills } from './tools/getSkills';
 
 export const maxDuration = 30;
 
-// Create Google AI provider with explicit API key
-const google = createGoogleGenerativeAI({
-  apiKey: process.env.GOOGLE_GENERATIVE_AI_API_KEY,
+// Create DeepSeek provider using OpenAI compatibility
+const deepseek = createOpenAI({
+  apiKey: process.env.DEEPSEEK_API_KEY,
+  baseURL: 'https://api.deepseek.com',
 });
 
-// ❌ Pas besoin de l'export ici, Next.js n'aime pas ça
 function errorHandler(error: unknown) {
   if (error == null) {
     return 'Unknown error';
@@ -33,16 +33,17 @@ function errorHandler(error: unknown) {
 
 export async function POST(req: Request) {
   try {
-    const { messages } = await req.json();
+    // We explicitly type messages to assist inference
+    const { messages }: { messages: CoreMessage[] } = await req.json();
     console.log('[CHAT-API] Incoming messages:', messages);
     
     // Check if API key is available
-    if (!process.env.GOOGLE_GENERATIVE_AI_API_KEY) {
-      console.error('[CHAT-API] Missing GOOGLE_GENERATIVE_AI_API_KEY environment variable');
+    if (!process.env.DEEPSEEK_API_KEY) {
+      console.error('[CHAT-API] Missing DEEPSEEK_API_KEY environment variable');
       return new Response('Missing API key', { status: 500 });
     }
     
-    console.log('[CHAT-API] API key available:', process.env.GOOGLE_GENERATIVE_AI_API_KEY?.slice(0, 10) + '...');
+    console.log('[CHAT-API] API key available:', process.env.DEEPSEEK_API_KEY?.slice(0, 5) + '...');
 
     // Add system prompt
     messages.unshift(SYSTEM_PROMPT);
@@ -59,16 +60,17 @@ export async function POST(req: Request) {
 
     console.log('[CHAT-API] About to call streamText');
     
+    // streamText returns a Promise in ai@4, so we await it
     const result = await streamText({
-      model: google('gemini-1.5-flash'),
+      model: deepseek('deepseek-chat'),
       messages,
       tools,
       maxSteps: 2,
     });
 
     console.log('[CHAT-API] streamText completed successfully');
-    console.log('[CHAT-API] Result object keys:', Object.keys(result));
     
+    // toDataStreamResponse creates a standard response for AI SDK clients
     const response = result.toDataStreamResponse();
     console.log('[CHAT-API] DataStreamResponse created');
     
