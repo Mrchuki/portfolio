@@ -7,7 +7,7 @@
     "email": "ijudezrafales@gmail.com",
     "phone": "+34 620928705",
     "handle": "@ijudezrafales",
-    "bio": "Hey 👋😄\nI'm Iván, an Industrial Engineer who loves building smart things with AI. I’ve worked on projects in computer vision 👁️, RAG systems 📚✨ and automation ⚙️, both in research 🧑‍🔬 and industry 🏭 at Bosch. I’m curious 🧐, hands-on 🛠️, and always looking for new ways to make technology practical and useful 🚀. Outside of work, I enjoy spending time with friends 👥🎉 — if you appreciate that too, contact me for a water anytime 🍺😉",
+    "bio": "Hey \nI'm Iván, an Industrial Engineer who loves building smart things with AI. I’ve worked on projects in computer vision, RAG systems and automation, both in research and industry at Bosch and Letsinnovate. I’m curious, hands-on, and always looking for new ways to make technology practical and useful. Outside of work, I enjoy spending time with friends so, if you appreciate that too, contact me for a water anytime...",
     "avatar": "/profile.jpeg",
     "fallbackAvatar": "https://images.unsplash.com/photo-1610216705422-caa3fcb6d158?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3"
   },
@@ -47,6 +47,14 @@
     ]
   },
   "experience": [
+    {
+      "company": "Letsinnovate",
+      "position": "AI Engineer",
+      "type": "Fulltime",
+      "duration": "September 2025 – Present",
+      "description": "Contributing to the creation and growth of an innovation consultancy from scratch, being one of the first hires alongside the founding team. Working on innovation and business transformation consulting projects for companies of different sizes, adapting approaches and methodologies based on each client’s context and needs. Designing and building technology and AI-driven solutions focused on generating measurable business impact, with a strong emphasis on ROI analysis, investment prioritization, and translating innovation initiatives into concrete, actionable projects.",
+      "technologies": ["Python", "LangChain", "Airtable", "Render.com", "n8n", "Apify"]
+    },
     {
       "company": "Bosch (BDO / LIX Team)",
       "position": "AI & Data Engineering Intern",
@@ -133,10 +141,10 @@
   "duration": "",
   "startDate": "",
   "preferredLocation": "To be discussed",
-  "focusAreas": ["Freelance projects in AI, automation, and digitalization"],
-  "availability": "Just finished my internship in September",
+  "focusAreas": ["Innovation Projects"],
+  "availability": "Working at Letsinnovate as a Junior AI Engineer",
   "workStyle": "Focused on driving AI adoption and digital transformation through data-driven engineering solutions. Committed to leveraging AI to improve efficiency, decision-making, and innovation in real-world applications. Combining technical expertise with an industrial engineering background to deliver solutions that create sustainable business impact.",
-  "goals": "Partner with teams to scope, prototype, and deploy AI- and automation-driven solutions that deliver measurable impact (efficiency, cost, quality). Open to freelance engagements across AI, automation, and digitalization: from rapid PoCs to production-ready systems, with a focus on reliability, MLOps, and continuous improvement."
+  "goals": "Partner with teams to scope, prototype, and deploy AI- and automation-driven solutions that deliver measurable impact (efficiency, cost, quality). Open to engagements across AI, automation, and digitalization: from rapid PoCs to production-ready systems, with a focus on reliability, MLOps, and continuous improvement."
   },
   "personality": {
     "traits": ["curious", "proactive", "team-oriented", "adaptable", "ambitious"],
@@ -185,8 +193,7 @@
       "Tell me about your Amazon ML Summer School experience",
       "What certifications do you have?",
       "Why should I hire you?",
-      "What's your educational background?",
-      "How was your experience as a freelancer?"
+      "What's your educational background?"
     ],
     "projects": [
       "What projects are you most proud of?",

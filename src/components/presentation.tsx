@@ -95,7 +95,7 @@ export function Presentation() {
             transition={{ delay: 0.6, duration: 0.5 }}
             className="mt-4 flex flex-wrap gap-2"
           >
-            {['AI Engineer', 'Python Developer', 'IoT Specialist', 'ML Engineer', 'Freelancer'].map(
+            {['AI Engineer', 'Python Developer', 'Project Manager', 'Team Leader'].map(
               (tag) => (
                 <span
                   key={tag}
