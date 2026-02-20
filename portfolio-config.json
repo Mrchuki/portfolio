@@ -3,11 +3,11 @@
     "name": "Iván Júdez Ráfales",
     "age": 24,
     "location": "Saragossa, Spain",
-    "title": "Industrial & AI Engineer",
+    "title": "AI/ML Engineer | Agentic Systems | Industrial AI",
     "email": "ijudezrafales@gmail.com",
     "phone": "+34 620928705",
     "handle": "@ijudezrafales",
-    "bio": "Hey \nI'm Iván, an Industrial Engineer who loves building smart things with AI. I’ve worked on projects in computer vision, RAG systems and automation, both in research and industry at Bosch and Letsinnovate. I’m curious, hands-on, and always looking for new ways to make technology practical and useful. Outside of work, I enjoy spending time with friends so, if you appreciate that too, contact me for a water anytime...",
+    "bio": "Focused on applying AI and automation to real-world technical challenges. Experienced across the full project lifecycle, from building agentic pipelines and deploying production systems to collaborating on innovation strategy. I thrive in hybrid roles where engineering rigour and AI capabilities come together to solve problems that matter.",
     "avatar": "/profile.jpeg",
     "fallbackAvatar": "https://images.unsplash.com/photo-1610216705422-caa3fcb6d158?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3"
   },
@@ -49,27 +49,27 @@
   "experience": [
     {
       "company": "Letsinnovate",
-      "position": "AI Engineer",
+      "position": "AI/ML Engineer",
       "type": "Fulltime",
-      "duration": "September 2025 – Present",
-      "description": "Contributing to the creation and growth of an innovation consultancy from scratch, being one of the first hires alongside the founding team. Working on innovation and business transformation consulting projects for companies of different sizes, adapting approaches and methodologies based on each client’s context and needs. Designing and building technology and AI-driven solutions focused on generating measurable business impact, with a strong emphasis on ROI analysis, investment prioritization, and translating innovation initiatives into concrete, actionable projects.",
-      "technologies": ["Python", "LangChain", "Airtable", "Render.com", "n8n", "Apify"]
+      "duration": "October 2025 – Present",
+      "description": "Joined as the first hire of an early-stage AI innovation consultancy, bridging technical delivery and innovation strategy for enterprise clients. Developed a multi-agent strategic document generator using LangGraph, reducing creation time by 95%. Built a social media trend radar with scraping and LLMs. Deployed production-ready containerized solutions with Docker, n8n, and CI/CD pipelines.",
+      "technologies": ["Python", "LangChain", "LangGraph", "Docker", "n8n", "Airtable"]
     },
     {
-      "company": "Bosch (BDO / LIX Team)",
-      "position": "AI & Data Engineering Intern",
+      "company": "Robert Bosch AG, BDO",
+      "position": "AI & Data Engineer Intern",
       "type": "Internship",
       "duration": "March 2025 – September 2025",
-      "description": "Worked on AI-powered assistants and data engineering workflows within Bosch’s Library Intelligence Xperience (LIX) team. Developed a private RAG system using Azure OpenAI, LangChain, and Chroma for technical documentation. Built structured pipelines for evaluation and document retrieval, integrating Pydantic parsing, Hydra configs, and Deepeval testing. Collaborated with international teams to deliver scalable AI solutions.",
-      "technologies": ["Python", "LangChain", "Azure OpenAI", "ChromaDB", "Hydra", "Pydantic", "Deepeval", "FastAPI"]
+      "description": "Developed a private-document RAG pipeline using LangChain, OpenAI APIs, and Deepeval, reducing search time by 40%. Built AI Agents to autonomously generate dashboards from natural language queries. Built data pipelines in Azure Databricks to process high-frequency machine telemetry from European industrial plants.",
+      "technologies": ["Python", "LangChain", "Azure Databricks", "Azure OpenAI", "ChromaDB", "Pydantic"]
     },
     {
-      "company": "Research Internship",
-      "position": "AI Research Intern",
-      "type": "Internship",
+      "company": "Institute for Research in Technology, IIT-ICAI",
+      "position": "Research Fellow (Grant)",
+      "type": "Fellowship",
       "duration": "June 2024 – September 2024",
-      "description": "Conducted research on LLM workflows for scientific papers. Built an end-to-end pipeline to process raw PDFs from arXiv, generate text fragments with Mixtral8x7B and Qwen, and fine-tune LLaMA3 and Gemma models for conversational assistants. Designed evaluation frameworks and contributed to experiments on context retrieval and summarization.",
-      "technologies": ["Python", "Mixtral8x7B", "Qwen", "LLaMA3", "Gemma", "LangChain", "Fine-tuning", "Evaluation Pipelines"]
+      "description": "Fine-tuned open-source LLMs (Llama3, Gemma) for confidential document Q&A and synthetic data generation, building privacy-focused solutions to accelerate organizational AI adoption.",
+      "technologies": ["Python", "LLaMA3", "Gemma", "LangChain", "Fine-tuning", "Synthetic Data"]
     }
   ],
   "skills": {
@@ -85,6 +85,27 @@
   "certifications": [
   ],
   "projects": [
+    {
+      "title": "License Plate Recognition with YOLO26n",
+      "category": "Computer Vision / AI",
+      "description": "Built an end-to-end pipeline for License Plate Recognition (LPR) using the YOLO26n release. Evaluated performance on the UC3M-LP dataset, achieving an mAP50 of 0.98 and an average inference speed of ~18.7ms per image on a MacBook Pro M3. The project includes dataset processing, custom YOLO model training, and a script to compile videos with a real-time detection UI overlay.",
+      "techStack": ["Python 3.10", "YOLO26n", "PyTorch 2.9.1", "OpenCV"],
+      "date": "2024",
+      "status": "Completed",
+      "featured": true,
+      "links": [
+        {
+          "name": "GitHub Repo",
+          "url": "https://github.com/Mrchuki/lp-computer-vision"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://raw.githubusercontent.com/Mrchuki/lp-computer-vision/main/docs/lp_detection.png",
+          "alt": "License Plate Recognition Demo"
+        }
+      ]
+    },
     {
       "title": "Automated Sorting Plant Digital Twin",
       "category": "Industrial Automation",
@@ -162,14 +183,14 @@
     "title": "Iván Júdez Ráfales - Resume",
     "description": "Industrial & AI Engineer",
     "fileType": "PDF",
-    "lastUpdated": "September 2025",
+    "lastUpdated": "February 2026",
     "fileSize": "64 MB",
     "downloadUrl": "/CV_IvanJudezRafales.pdf"
   },
   "chatbot": {
     "name": "MrChuki",
-    "personality": "casual, enthusiastic, tech-savvy",
-    "tone": "friendly and conversational",
+    "personality": "academic and formal but young, like a 24-year-old graduate",
+    "tone": "professional, articulate, slightly enthusiastic",
     "language": "english",
     "responseStyle": "short and interactive",
     "useEmojis": true,
@@ -188,9 +209,9 @@
       "What are your skills?",
       "Can I see your resume?",
       "What's your experience?",
-      "Are you looking for internships?",
+      "Are you looking for new roles?",
       "What makes you a valuable team member?",
-      "Tell me about your Amazon ML Summer School experience",
+      "Tell me about your experience at Letsinnovate",
       "What certifications do you have?",
       "Why should I hire you?",
       "What's your educational background?"
@@ -205,9 +226,9 @@
     ],
     "achievements": [
       "What are your major achievements?",
-      "Tell me about Smart India Hackathon",
+      "Tell me about the Repsol Hackathon",
       "What awards have you won?",
-      "Tell me about your Amazon selection"
+      "Tell me about your Valor Hackathon project"
     ],
     "contact": [
       "How can I reach you?",
@@ -226,7 +247,7 @@
   },
   "meta": {
     "configVersion": "10.0",
-    "lastUpdated": "2025-09-22",
+    "lastUpdated": "2026-02-20",
     "generatedBy": "Iván Júdez Ráfales",
     "description": "Updated portfolio configuration with Iván Júdez Ráfales' information"
   }

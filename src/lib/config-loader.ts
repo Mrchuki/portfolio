@@ -47,9 +47,6 @@ try {
     social: {
       linkedin: '',
       github: '',
-      twitter: '',
-      kaggle: '',
-      leetcode: '',
       fiverr: ''
     },
     internship: {

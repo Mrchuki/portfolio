@@ -75,9 +75,6 @@ export interface Project {
 export interface Social {
   linkedin: string;
   github: string;
-  twitter: string;
-  kaggle: string;
-  leetcode: string;
   fiverr: string;
 }
 

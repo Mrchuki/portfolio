@@ -120,7 +120,6 @@ export function PresetReply({ question, reply, tool, onGetAIResponse, onClose }:
                           <Zap className="w-3 h-3 flex-shrink-0" />
                           <span className="font-medium">Preset Response</span>
                         </div>
-                        <span className="text-xs text-gray-500">• I implemented this to save API quota</span>
                       </div>
                       <Button 
                         onClick={handleGetAIResponse}
@@ -266,7 +265,6 @@ export function PresetReply({ question, reply, tool, onGetAIResponse, onClose }:
                           <Zap className="w-3 h-3 flex-shrink-0" />
                           <span className="font-medium">Optimized Response</span>
                         </div>
-                        <span className="text-xs text-gray-500">• I implemented this to save API quota</span>
                       </div>
                       <Button 
                         onClick={handleGetAIResponse}
