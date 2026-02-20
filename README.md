@@ -49,7 +49,7 @@ No coding knowledge required. Just configure, deploy, and showcase your best sel
 
 3. **Get a Google Gemini API Key**
     - Visit [Google AI Studio](https://aistudio.google.com/)
-    - Sign in, create an API key, and copy it.
+    - Sign in, create an API key, and copy it..
 
 4. **Configure Environment**
     - Copy `.env.example` to `.env.local`
