@@ -1,13 +1,13 @@
 {
-  "name": "Portfolio Builder - Create Professional Portfolios in Minutes",
-  "short_name": "Portfolio Builder",
-  "description": "Revolutionary AI-powered portfolio builder that requires zero coding. Edit one JSON file and get a complete interactive portfolio with AI chatbot.",
+  "name": "Iván Júdez Ráfales — AI/ML Engineer & Industrial Engineer",
+  "short_name": "Iván Júdez",
+  "description": "Portfolio of Iván Júdez Ráfales — AI/ML Engineer at Letsinnovate, Industrial Engineer with an MSc in Connected Industry from Comillas ICAI. AI, machine learning, automation and IoT projects.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#667eea",
+  "theme_color": "#000000",
   "orientation": "portrait-primary",
-  "categories": ["productivity", "developer tools", "portfolio"],
+  "categories": ["portfolio", "productivity", "education"],
   "lang": "en",
   "dir": "ltr",
   "icons": [
@@ -39,7 +39,7 @@
     }
   ],
   "scope": "/",
-  "id": "portfolio-builder",
+  "id": "ivanjudezrafales-portfolio",
   "related_applications": [],
   "prefer_related_applications": false
 }

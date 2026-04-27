@@ -8,48 +8,53 @@ import { Toaster } from "@/components/ui/sonner";
 import "./globals.css";
 
 // Load Inter font for non-Apple devices
-const inter = Inter({ 
+const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
 });
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.ivanjudezrafales.com";
+const GSC_VERIFICATION = process.env.NEXT_PUBLIC_GSC_VERIFICATION;
+
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://ivanjudezrafales.com"),
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "Iván Júdez Ráfales - Industrial & AI Engineer | Professional Portfolio",
-    template: "%s | Iván Júdez Ráfales Portfolio"
+    default: "Iván Júdez Ráfales — AI/ML Engineer & Industrial Engineer | Portfolio",
+    template: "%s | Iván Júdez Ráfales"
   },
-  description: "Professional portfolio of Iván Júdez Ráfales - Industrial & AI Engineer. Showcasing AI, Automation, and IoT projects.",
+  description:
+    "Iván Júdez Ráfales — AI/ML Engineer at Letsinnovate, Industrial Engineer with an MSc in Connected Industry from Comillas ICAI. Portfolio showcasing AI, machine learning, automation and IoT projects.",
   keywords: [
-    "Full-stack Developer", 
-    "Python Developer",
+    "Iván Júdez Ráfales",
+    "Ivan Judez Rafales",
     "AI Engineer",
-    "Portfolio",
-    "Software Developer",
-    "Machine Learning",
-    "IoT Developer",
-    "Web Development",
-    "Next.js",
-    "React",
-    "FastAPI",
-    "Django",
-    "Automation",
+    "AI/ML Engineer",
+    "Machine Learning Engineer",
+    "Industrial Engineer",
+    "Letsinnovate",
+    "Comillas ICAI",
+    "MSc Connected Industry",
+    "MSc Smart Industry",
+    "Master Industria Conectada",
+    "Master Industria Inteligente",
+    "AI Engineer Madrid",
+    "AI Engineer Spain",
     "LangChain",
-    "Smart India Hackathon",
-    "Freelancer",
+    "RAG",
+    "LLM",
     "AI Chatbot",
-    "Professional Portfolio",
-    "Developer Portfolio",
-    "Tech Portfolio",
-    "Internship",
-    "Python Automation",
-    "Web Scraping",
-    "API Development"
+    "Automation",
+    "IoT",
+    "Digital Twin",
+    "Python",
+    "Next.js",
+    "FastAPI",
+    "Portfolio",
   ],
   authors: [
     {
       name: "Iván Júdez Ráfales",
-      url: process.env.NEXT_PUBLIC_SITE_URL || "https://ivanjudezrafales.com",
+      url: SITE_URL,
     },
   ],
   creator: "Iván Júdez Ráfales",
@@ -68,29 +73,29 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: process.env.NEXT_PUBLIC_SITE_URL || "https://ivanjudezrafales.com",
-    title: "Iván Júdez Ráfales - Industrial & AI Engineer | Professional Portfolio",
-    description: "Professional portfolio of Iván Júdez Ráfales showcasing AI-powered projects, IoT systems, and full-stack development.",
-    siteName: "Iván Júdez Ráfales Portfolio",
+    url: SITE_URL,
+    title: "Iván Júdez Ráfales — AI/ML Engineer & Industrial Engineer",
+    description:
+      "AI/ML Engineer at Letsinnovate, Industrial Engineer with an MSc in Connected Industry from Comillas ICAI. Portfolio with AI, automation and IoT projects.",
+    siteName: "Iván Júdez Ráfales",
     images: [
       {
-        url: `${process.env.NEXT_PUBLIC_SITE_URL || "https://ivanjudezrafales.com"}/portfolio.png`,
+        url: `${SITE_URL}/portfolio.png`,
         width: 1200,
         height: 630,
-        alt: "Iván Júdez Ráfales - Professional Portfolio with AI Chatbot",
+        alt: "Iván Júdez Ráfales — AI/ML Engineer Portfolio",
         type: "image/png",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Iván Júdez Ráfales - Industrial & AI Engineer",
-    description: "Professional portfolio showcasing AI projects, IoT systems, and automation solutions.",
-    creator: "@ijudezrafales",
-    site: "@ijudezrafales",
+    title: "Iván Júdez Ráfales — AI/ML Engineer & Industrial Engineer",
+    description:
+      "Portfolio of Iván Júdez Ráfales — AI/ML Engineer at Letsinnovate. AI, machine learning, automation and IoT projects.",
     images: [{
-      url: `${process.env.NEXT_PUBLIC_SITE_URL || "https://ivanjudezrafales.com"}/portfolio.png`,
-      alt: "Iván Júdez Ráfales Professional Portfolio"
+      url: `${SITE_URL}/portfolio.png`,
+      alt: "Iván Júdez Ráfales — AI/ML Engineer Portfolio"
     }],
   },
   icons: {
@@ -100,18 +105,17 @@ export const metadata: Metadata = {
         sizes: "any",
       }
     ],
-    shortcut: "/favicon.ico?v=2",
-    apple: "/apple-touch-icon.svg?v=2",
+    shortcut: "/favicon.ico",
   },
   manifest: "/manifest.json",
   alternates: {
-    canonical: process.env.NEXT_PUBLIC_SITE_URL || "https://ivanjudezrafales.com",
+    canonical: SITE_URL,
   },
   category: "technology",
   classification: "Portfolio Website",
-  other: {
-    "google-site-verification": "your-google-verification-code-here",
-  },
+  ...(GSC_VERIFICATION
+    ? { verification: { google: GSC_VERIFICATION } }
+    : {}),
 };
 
 export default function RootLayout({
@@ -124,7 +128,7 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="canonical" href={process.env.NEXT_PUBLIC_SITE_URL || "https://ivanjudezrafales.com"} />
+        <link rel="canonical" href={SITE_URL} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -132,31 +136,61 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               "name": "Iván Júdez Ráfales",
-              "jobTitle": "Industrial & AI Engineer",
-              "url": process.env.NEXT_PUBLIC_SITE_URL || "https://ivanjudezrafales.com",
-              "image": `${process.env.NEXT_PUBLIC_SITE_URL || "https://ivanjudezrafales.com"}/profile.jpeg`,
+              "alternateName": "Ivan Judez Rafales",
+              "givenName": "Iván",
+              "familyName": "Júdez Ráfales",
+              "jobTitle": "AI/ML Engineer",
+              "url": SITE_URL,
+              "image": `${SITE_URL}/profile.jpeg`,
+              "email": "mailto:ijudezrafales@gmail.com",
+              "nationality": {
+                "@type": "Country",
+                "name": "Spain"
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "ES"
+              },
+              "knowsLanguage": ["es", "en"],
               "sameAs": [
                 "https://github.com/Mrchuki",
                 "https://www.linkedin.com/in/ivanjudez/"
               ],
               "worksFor": {
                 "@type": "Organization",
-                "name": "Freelance"
+                "name": "Letsinnovate",
+                "url": "https://www.letsinnovate.es/"
               },
-              "alumniOf": {
-                "@type": "Organization",
-                "name": "Comillas ICAI"
-              },
-              "knowsAbout": [
-                "Python Development",
-                "AI Engineering",
-                "Machine Learning",
-                "IoT Systems",
-                "Web Development",
-                "Automation",
-                "Full Stack Development"
+              "alumniOf": [
+                {
+                  "@type": "CollegeOrUniversity",
+                  "name": "Universidad Pontificia Comillas (ICAI)",
+                  "url": "https://www.comillas.edu/",
+                  "department": {
+                    "@type": "EducationalOrganization",
+                    "name": "MSc in Connected Industry (now MSc in Smart Industry)",
+                    "url": "https://www.comillas.edu/postgrados/master-universitario-en-industria-inteligente/"
+                  }
+                }
               ],
-              "description": "Industrial & AI Engineer with hands-on experience in AI, Automation, and IoT."
+              "knowsAbout": [
+                "Artificial Intelligence",
+                "Machine Learning",
+                "AI Engineering",
+                "Large Language Models",
+                "Retrieval Augmented Generation",
+                "LangChain",
+                "Industrial Automation",
+                "IoT Systems",
+                "Digital Twin",
+                "Python Development",
+                "Full Stack Development",
+                "Next.js",
+                "FastAPI",
+                "MLOps"
+              ],
+              "description":
+                "AI/ML Engineer at Letsinnovate. Industrial Engineer with an MSc in Connected Industry (Comillas ICAI). Builds AI, automation and IoT solutions with measurable business impact."
             })
           }}
         />

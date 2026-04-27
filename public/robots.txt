@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ivanjudezrafales.com/sitemap.xml
+Sitemap: https://www.ivanjudezrafales.com/sitemap.xml

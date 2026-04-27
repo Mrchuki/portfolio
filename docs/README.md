@@ -22,7 +22,7 @@ MIT License details including:
 ## 🚀 Quick Links
 
 - **Main Repository**: [GitHub](https://github.com/anujjainbatu/portfolio)
-- **Live Demo**: [Portfolio](https://ivanjudezrafales.com/)
+- **Live Demo**: [Portfolio](https://www.ivanjudezrafales.com/)
 - **Issues**: [Report Bugs](https://github.com/anujjainbatu/portfolio/issues)
 - **Discussions**: [Community Forum](https://github.com/anujjainbatu/portfolio/discussions)
 
