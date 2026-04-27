@@ -14,6 +14,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://ivanjudezrafales.com"),
   title: {
     default: "Iván Júdez Ráfales - Industrial & AI Engineer | Professional Portfolio",
     template: "%s | Iván Júdez Ráfales Portfolio"
@@ -48,7 +49,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Iván Júdez Ráfales",
-      url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
+      url: process.env.NEXT_PUBLIC_SITE_URL || "https://ivanjudezrafales.com",
     },
   ],
   creator: "Iván Júdez Ráfales",
@@ -67,13 +68,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
+    url: process.env.NEXT_PUBLIC_SITE_URL || "https://ivanjudezrafales.com",
     title: "Iván Júdez Ráfales - Industrial & AI Engineer | Professional Portfolio",
     description: "Professional portfolio of Iván Júdez Ráfales showcasing AI-powered projects, IoT systems, and full-stack development.",
     siteName: "Iván Júdez Ráfales Portfolio",
     images: [
       {
-        url: `${process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"}/portfolio.png`,
+        url: `${process.env.NEXT_PUBLIC_SITE_URL || "https://ivanjudezrafales.com"}/portfolio.png`,
         width: 1200,
         height: 630,
         alt: "Iván Júdez Ráfales - Professional Portfolio with AI Chatbot",
@@ -88,7 +89,7 @@ export const metadata: Metadata = {
     creator: "@ijudezrafales",
     site: "@ijudezrafales",
     images: [{
-      url: `${process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"}/portfolio.png`,
+      url: `${process.env.NEXT_PUBLIC_SITE_URL || "https://ivanjudezrafales.com"}/portfolio.png`,
       alt: "Iván Júdez Ráfales Professional Portfolio"
     }],
   },
@@ -104,7 +105,7 @@ export const metadata: Metadata = {
   },
   manifest: "/manifest.json",
   alternates: {
-    canonical: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
+    canonical: process.env.NEXT_PUBLIC_SITE_URL || "https://ivanjudezrafales.com",
   },
   category: "technology",
   classification: "Portfolio Website",
@@ -123,7 +124,7 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="canonical" href={process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"} />
+        <link rel="canonical" href={process.env.NEXT_PUBLIC_SITE_URL || "https://ivanjudezrafales.com"} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -132,8 +133,8 @@ export default function RootLayout({
               "@type": "Person",
               "name": "Iván Júdez Ráfales",
               "jobTitle": "Industrial & AI Engineer",
-              "url": process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
-              "image": `${process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"}/profile.jpeg`,
+              "url": process.env.NEXT_PUBLIC_SITE_URL || "https://ivanjudezrafales.com",
+              "image": `${process.env.NEXT_PUBLIC_SITE_URL || "https://ivanjudezrafales.com"}/profile.jpeg`,
               "sameAs": [
                 "https://github.com/Mrchuki",
                 "https://www.linkedin.com/in/ivanjudez/"
